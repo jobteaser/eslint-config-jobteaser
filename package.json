@@ -4,7 +4,7 @@
   "description": "ESLint configuration for JobTeaser projects.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -19,15 +19,33 @@
     "jobteaser"
   ],
   "author": "Mathieu Carpentier <mathieu.carpentier@jobteaser.com>",
+  "contributors": [
+    {
+      "name": "Fabien Raynaud",
+      "email": "fabien.raynaud@jobteaser.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jobteaser/eslint-config-jobteaser/issues"
   },
   "homepage": "https://github.com/jobteaser/eslint-config-jobteaser#readme",
-  "devDependencies": {
-    "babel-eslint": "^7.1.0",
-    "eslint": "^4.1.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^7.1.0"
+  "dependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "eslint": "^4.7.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
+  },
+  "engines": {
+    "node": ">= 4"
   }
 }
