@@ -18,6 +18,7 @@ module.exports = {
         "allowChildren": true
       }
     ],
+    "jsx-a11y/media-has-caption": [ "off" ],
     "jsx-a11y/no-noninteractive-element-interactions": [ "off" ],
     "jsx-a11y/no-noninteractive-tabindex": [ "off" ],
     "jsx-a11y/no-static-element-interactions": [ "off" ],
