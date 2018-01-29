@@ -11,8 +11,12 @@ module.exports = {
     "curly": [ "error" ],
     "dot-location": [ "error", "property" ],
     "guard-for-in": [ "warn" ],
-
-
+    "id-length": [ "error",
+      {
+        "min": 3,
+        "exceptions": [ "e", "id", "cx" ]
+      }
+    ],
     "max-len": [ "warn",
       {
         "code": 120,
