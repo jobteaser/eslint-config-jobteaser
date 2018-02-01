@@ -33,7 +33,11 @@ module.exports = {
     "react/prefer-es6-class": [ "error" ],
     "react/prop-types": [ "warn" ],
     "react/react-in-jsx-scope": [ "error" ],
-    "react/require-default-props": [ "warn" ],
+    "react/require-default-props": [ "error",
+      {
+        "forbidDefaultForRequired": true
+      }
+    ],
     "react/self-closing-comp": [ "error" ],
     "react/sort-comp": [ "off" ],
   }
