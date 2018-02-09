@@ -55,7 +55,6 @@ module.exports = {
     "no-var": [ "error" ],
     "object-curly-spacing": [ "error", "always" ],
     "one-var": [ "error", "never" ],
-    "operator-assignment": [ "error", "never" ],
     "prefer-const": [ "error" ],
     "quotes": [ "error", "double" ],
 
