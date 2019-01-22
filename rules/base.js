@@ -1,7 +1,6 @@
 module.exports = {
   rules: {
     "arrow-body-style": [ "error", "as-needed" ],
-    "array-bracket-spacing": [ "error", "always" ],
     "brace-style": [ "error", "1tbs" ],
     "class-methods-use-this": [ "off" ],
     "comma-dangle": [ "error", "always-multiline" ],
@@ -69,6 +68,13 @@ module.exports = {
         "words": true,
         "nonwords": false
       }
-    ]
+    ],
+    "prefer-destructuring": [ "off" ],
+    "object-curly-newline": [ "off" ],
+    "implicit-arrow-linebreak": [ "off" ],
+    "function-paren-newline": [ "off" ],
+    "arrow-parens": [ "off" ],
+    "no-param-reassign": [ "off" ],
+    "no-underscore-dangle": [ "off" ],
   }
 }

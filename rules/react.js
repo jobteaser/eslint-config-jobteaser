@@ -10,7 +10,6 @@ module.exports = {
   rules: {
     "react/forbid-prop-types": [ "off" ],
     "react/jsx-closing-bracket-location": [ "error", "tag-aligned" ],
-    "react/jsx-curly-spacing": [ "error", "always" ],
     "react/jsx-filename-extension": [ "off" ],
     "react/jsx-indent-props": [ "error", 2 ],
     "react/jsx-no-duplicate-props": [ "error" ],
@@ -41,5 +40,10 @@ module.exports = {
     "react/self-closing-comp": [ "error" ],
     "react/sort-comp": [ "off" ],
     "react/prefer-stateless-function": [ "off" ],
+    "react/destructuring-assignment": [ "off" ],
+    "react/no-access-state-in-setstate": [ "off" ],
+    "react/no-unused-state": [ "warn" ], //TODO should be error (default)
+    "react/default-props-match-prop-types": [ "warn" ], //TODO should be error (default)
+    "react/button-has-type": [ "warn" ], //TODO should be error (default)
   }
 }

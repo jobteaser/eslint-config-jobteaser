@@ -23,5 +23,8 @@ module.exports = {
     "jsx-a11y/no-noninteractive-tabindex": [ "off" ],
     "jsx-a11y/no-static-element-interactions": [ "off" ],
     "jsx-quotes": [ "error", "prefer-double" ],
+    "jsx-a11y/click-events-have-key-events" : [ "off" ],
+    "jsx-a11y/anchor-is-valid" : [ "off" ],
+    "jsx-a11y/label-has-associated-control" : [ "off" ],
   }
 }

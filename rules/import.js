@@ -5,5 +5,7 @@ module.exports = {
     "import/no-unresolved": [ "off" ],
     "import/prefer-default-export": [ "off" ],
     "import/no-extraneous-dependencies": [ "off" ],
+    "import/named": [ "warn" ],
+    "import/newline-after-import": [ "off" ],
   }
 }
