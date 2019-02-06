@@ -1,7 +1,7 @@
 module.exports = {
   rules: {
     "arrow-body-style": [ "error", "as-needed" ],
-    "array-bracket-spacing": [ "error", "always" ],
+    "array-bracket-spacing": [ "error", "never" ],
     "brace-style": [ "error", "1tbs" ],
     "class-methods-use-this": [ "off" ],
     "comma-dangle": [ "error", "always-multiline" ],

@@ -10,7 +10,7 @@ module.exports = {
   rules: {
     "react/forbid-prop-types": [ "off" ],
     "react/jsx-closing-bracket-location": [ "error", "tag-aligned" ],
-    "react/jsx-curly-spacing": [ "error", "always" ],
+    "react/jsx-curly-spacing": [ "error", "never" ],
     "react/jsx-filename-extension": [ "off" ],
     "react/jsx-indent-props": [ "error", 2 ],
     "react/jsx-no-duplicate-props": [ "error" ],
