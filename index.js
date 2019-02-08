@@ -6,6 +6,8 @@ module.exports = {
     "./rules/import",
     "./rules/jsx-ally",
     "./rules/react",
+    "eslint-config-prettier",
+    "eslint-config-prettier/react",
   ].map(require.resolve),
   rules: {}
 }
