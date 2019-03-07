@@ -69,6 +69,7 @@ module.exports = {
         "words": true,
         "nonwords": false
       }
-    ]
+    ],
+    "prefer-destructuring": [ "error", { "object": true, "array": false } ],
   }
 }
