@@ -42,5 +42,6 @@ module.exports = {
     "react/sort-comp": ["off"],
     "react/prefer-stateless-function": ["off"],
     "react/destructuring-assignment": ["off"],
+    "react/no-access-state-in-setstate": ["off"],
   }
 }
