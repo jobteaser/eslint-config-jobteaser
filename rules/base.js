@@ -28,6 +28,11 @@ module.exports = {
         "ignoreTemplateLiterals": true
       }
     ],
+    "max-params": ["error",
+      {
+        "max": 3
+      }
+    ],
     "no-bitwise": ["error"],
     "no-console": ["error",
       {
