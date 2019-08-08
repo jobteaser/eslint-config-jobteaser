@@ -9,5 +9,10 @@ module.exports = {
     "eslint-config-prettier",
     "eslint-config-prettier/react",
   ].map(require.resolve),
+  plugins: [
+    "eslint-plugin-import",
+    "eslint-plugin-jsx-a11y",
+    "eslint-plugin-react"
+  ],
   rules: {}
 }
