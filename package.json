@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-jobteaser",
+  "name": "@jobteaser/eslint-config",
   "version": "1.0.0",
   "description": "ESLint configuration for JobTeaser projects.",
   "main": "index.js",
