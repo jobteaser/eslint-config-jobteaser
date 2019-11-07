@@ -52,4 +52,5 @@ for more information.
 
 ## Improving this config
 
-You can make sure this module lints with itself using `npm run lint`.
+- You can make sure this module lints with itself using `npm run lint`.
+- if you want to add a new rule, open an [issue](https://github.com/jobteaser/eslint-config-jobteaser/issues) to discuss it.
