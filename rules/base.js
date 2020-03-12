@@ -1,4 +1,10 @@
 module.exports = {
+  env: {
+    es6: true,
+    browser: true,
+    jest: true,
+    node: true
+  },
   rules: {
     "arrow-body-style": ["error", "as-needed"],
     "array-bracket-spacing": ["error", "never"],
