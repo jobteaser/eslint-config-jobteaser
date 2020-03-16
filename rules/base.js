@@ -1,4 +1,10 @@
 module.exports = {
+  env: {
+    es6: true,
+    browser: true,
+    jest: true,
+    node: true
+  },
   rules: {
     "arrow-body-style": ["error", "as-needed"],
     "array-bracket-spacing": ["error", "never"],
@@ -24,7 +30,7 @@ module.exports = {
         "ignoreUrls": true,
         "ignoreComments": false,
         "ignoreRegExpLiterals": true,
-        "ignoreStrings": true,
+        "ignoreStrings": false,
         "ignoreTemplateLiterals": true
       }
     ],

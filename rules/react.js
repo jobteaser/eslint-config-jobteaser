@@ -7,11 +7,17 @@ module.exports = {
       jsx: true,
     },
   },
+  settings: {
+    "react": {
+      "version": "detect" // Detect the installed React version. Usefull for "react/jsx-fragments".
+    }
+  },
   rules: {
     "react/forbid-prop-types": ["error"],
     "react/jsx-closing-bracket-location": ["error", "tag-aligned"],
     "react/jsx-curly-spacing": ["error", "never"],
     "react/jsx-filename-extension": ["off"],
+    "react/jsx-fragments": ["error"],
     "react/jsx-indent-props": ["error", 2],
     "react/jsx-no-duplicate-props": ["error"],
     "react/jsx-no-literals": ["off"],
