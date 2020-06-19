@@ -7,6 +7,7 @@ module.exports = {
     "./rules/jsx-ally",
     "./rules/lodash",
     "./rules/react",
+    "./rules/react-hooks",
     "eslint-config-prettier",
     "eslint-config-prettier/react"
   ].map(require.resolve),
@@ -14,7 +15,8 @@ module.exports = {
     "eslint-plugin-import",
     "eslint-plugin-jsx-a11y",
     "eslint-plugin-lodash",
-    "eslint-plugin-react"
+    "eslint-plugin-react",
+    "eslint-plugin-react-hooks"
   ],
   rules: {}
 };
