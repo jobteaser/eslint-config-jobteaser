@@ -4,27 +4,156 @@ module.exports = {
       jsx: true,
     },
   },
+  /*
+    Based on the recommended rules of eslint-plugin-jsx-a11y/recommended :
+    https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/5b9f10f0d0549346534c3b6b0a64d49e5b06bd3a/src/index.js#L42
+
+    We have replaced the errors with warnings.
+  */
   rules: {
-    "jsx-a11y/alt-text": ["off"],
-    "jsx-a11y/anchor-has-content": ["off"],
-    "jsx-a11y/href-no-hash": ["off"],
-    "jsx-a11y/iframe-has-title": ["off"],
-    "jsx-a11y/label-has-for": ["error",
+    'jsx-a11y/accessible-emoji': "warn",
+    'jsx-a11y/alt-text': "warn",
+    'jsx-a11y/anchor-has-content': "warn",
+    'jsx-a11y/anchor-is-valid': "warn",
+    'jsx-a11y/aria-activedescendant-has-tabindex': "warn",
+    'jsx-a11y/aria-props': "warn",
+    'jsx-a11y/aria-proptypes': "warn",
+    'jsx-a11y/aria-role': "warn",
+    'jsx-a11y/aria-unsupported-elements': "warn",
+    'jsx-a11y/click-events-have-key-events': "warn",
+    'jsx-a11y/control-has-associated-label': ['off',
       {
-        "components": ["label"],
-        "required": {
-          "every": ["nesting", "id"]
-        },
-        "allowChildren": true
-      }
+        ignoreElements: [
+          'audio',
+          'canvas',
+          'embed',
+          'input',
+          'textarea',
+          'tr',
+          'video',
+        ],
+        ignoreRoles: [
+          'grid',
+          'listbox',
+          'menu',
+          'menubar',
+          'radiogroup',
+          'row',
+          'tablist',
+          'toolbar',
+          'tree',
+          'treegrid',
+        ],
+        includeRoles: [
+          'alert',
+          'dialog',
+        ],
+      },
     ],
-    "jsx-a11y/media-has-caption": ["off"],
-    "jsx-a11y/no-noninteractive-element-interactions": ["off"],
-    "jsx-a11y/no-noninteractive-tabindex": ["off"],
-    "jsx-a11y/no-static-element-interactions": ["off"],
-    "jsx-quotes": ["error", "prefer-double"],
-    "jsx-a11y/click-events-have-key-events": ["off"],
-    "jsx-a11y/anchor-is-valid": ["off"],
-    "jsx-a11y/label-has-associated-control": ["warn"],
-  }
+    'jsx-a11y/heading-has-content': "warn",
+    'jsx-a11y/html-has-lang': "warn",
+    'jsx-a11y/iframe-has-title': "warn",
+    'jsx-a11y/img-redundant-alt': "warn",
+    'jsx-a11y/interactive-supports-focus': [
+      "warn",
+      {
+        tabbable: [
+          'button',
+          'checkbox',
+          'link',
+          'searchbox',
+          'spinbutton',
+          'switch',
+          'textbox',
+        ],
+      },
+    ],
+    'jsx-a11y/label-has-associated-control': "warn",
+    'jsx-a11y/label-has-for': 'off',
+    'jsx-a11y/media-has-caption': "warn",
+    'jsx-a11y/mouse-events-have-key-events': "warn",
+    'jsx-a11y/no-access-key': "warn",
+    'jsx-a11y/no-autofocus': "warn",
+    'jsx-a11y/no-distracting-elements': "warn",
+    'jsx-a11y/no-interactive-element-to-noninteractive-role': [
+      "warn",
+      {
+        tr: ['none', 'presentation'],
+      },
+    ],
+    'jsx-a11y/no-noninteractive-element-interactions': [
+      "warn",
+      {
+        handlers: [
+          'onClick',
+          'onError',
+          'onLoad',
+          'onMouseDown',
+          'onMouseUp',
+          'onKeyPress',
+          'onKeyDown',
+          'onKeyUp',
+        ],
+        alert: ['onKeyUp', 'onKeyDown', 'onKeyPress'],
+        body: ['onError', 'onLoad'],
+        dialog: ['onKeyUp', 'onKeyDown', 'onKeyPress'],
+        iframe: ['onError', 'onLoad'],
+        img: ['onError', 'onLoad'],
+      },
+    ],
+    'jsx-a11y/no-noninteractive-element-to-interactive-role': [
+      "warn",
+      {
+        ul: [
+          'listbox',
+          'menu',
+          'menubar',
+          'radiogroup',
+          'tablist',
+          'tree',
+          'treegrid',
+        ],
+        ol: [
+          'listbox',
+          'menu',
+          'menubar',
+          'radiogroup',
+          'tablist',
+          'tree',
+          'treegrid',
+        ],
+        li: ['menuitem', 'option', 'row', 'tab', 'treeitem'],
+        table: ['grid'],
+        td: ['gridcell'],
+      },
+    ],
+    'jsx-a11y/no-noninteractive-tabindex': [
+      "warn",
+      {
+        tags: [],
+        roles: ['tabpanel'],
+        allowExpressionValues: true,
+      },
+    ],
+    'jsx-a11y/no-onchange': "warn",
+    'jsx-a11y/no-redundant-roles': "warn",
+    'jsx-a11y/no-static-element-interactions': [
+      "warn",
+      {
+        allowExpressionValues: true,
+        handlers: [
+          'onClick',
+          'onMouseDown',
+          'onMouseUp',
+          'onKeyPress',
+          'onKeyDown',
+          'onKeyUp',
+        ],
+      },
+    ],
+    'jsx-a11y/role-has-required-aria-props': "warn",
+    'jsx-a11y/role-supports-aria-props': "warn",
+    'jsx-a11y/scope': "warn",
+    'jsx-a11y/tabindex-no-positive': "warn",
+  },
 }
