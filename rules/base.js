@@ -20,7 +20,7 @@ module.exports = {
     "id-length": ["error",
       {
         "min": 3,
-        "exceptions": ["e", "id", "cx"]
+        "exceptions": ["e", "id", "cx", "to"]
       }
     ],
     "max-len": ["warn",
