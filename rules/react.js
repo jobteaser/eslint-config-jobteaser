@@ -50,5 +50,6 @@ module.exports = {
     "react/prefer-stateless-function": ["off"],
     "react/destructuring-assignment": ["error"],
     "react/no-access-state-in-setstate": ["off"],
+    "reactSnippets.settings.importReactOnTop": false,
   }
 }
