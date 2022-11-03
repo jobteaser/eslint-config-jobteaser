@@ -17,5 +17,11 @@ module.exports = {
     "eslint-plugin-react",
     "eslint-plugin-react-hooks"
   ],
-  rules: {}
+  rules: {},
+  overrides: [
+    {
+      files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      extends: ["./rules/jest-dom", "./rules/testing-library"],
+    },
+  ]
 };
