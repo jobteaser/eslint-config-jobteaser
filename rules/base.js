@@ -6,7 +6,7 @@ module.exports = {
     node: true
   },
   rules: {
-    "arrow-body-style": ["off"],
+    "arrow-body-style": ["warn", "as-needed"],
     "array-bracket-spacing": ["error", "never"],
     "brace-style": ["error", "1tbs"],
     "class-methods-use-this": ["off"],
@@ -15,7 +15,7 @@ module.exports = {
     "computed-property-spacing": ["error", "never"],
     "consistent-return": ["warn"],
     "curly": ["error"],
-    "default-param-last": ["off"],
+    "default-param-last": ["warn"],
     "dot-location": ["error", "property"],
     "guard-for-in": ["warn"],
     "id-length": ["error",
@@ -24,7 +24,7 @@ module.exports = {
         "exceptions": ["e", "id", "cx", "to"]
       }
     ],
-    "max-classes-per-file": ["off"],
+    "max-classes-per-file": ["warn"],
     "max-len": ["warn",
       {
         "code": 120,
@@ -47,8 +47,8 @@ module.exports = {
         "allow": ["info", "warn", "error"]
       }
     ],
-    "no-constructor-return": ["off"],
-    "no-import-assign": ["off"],
+    "no-constructor-return": ["warn"],
+    "no-import-assign": ["warn"],
     "no-multiple-empty-lines": ["error",
       {
         "max": 2
@@ -60,7 +60,7 @@ module.exports = {
         "allowForLoopAfterthoughts": true
       }
     ],
-    "no-promise-executor-return": ["off"],
+    "no-promise-executor-return": ["warn"],
     "no-prototype-builtins": ["off"],
     "no-trailing-spaces": ["warn",
       {
@@ -87,6 +87,6 @@ module.exports = {
       }
     ],
     "prefer-destructuring": ["error", { "object": true, "array": false }],
-    "prefer-regex-literals": ["off"]
+    "prefer-regex-literals": ["warn"]
   }
 }
