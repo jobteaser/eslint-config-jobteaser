@@ -14,7 +14,11 @@ module.exports = {
   },
   rules: {
     "react/forbid-prop-types": ["error"],
-    "react/function-component-definition": ["warn"],
+    "react/function-component-definition": ["warn",
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
     "react/jsx-closing-bracket-location": ["error", "tag-aligned"],
     "react/jsx-curly-brace-presence": ["warn"],
     "react/jsx-curly-spacing": ["error", "never"],
