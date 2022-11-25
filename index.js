@@ -1,5 +1,5 @@
 module.exports = {
-  parser: "babel-eslint",
+  parser: "@babel/eslint-parser",
   extends: [
     "eslint-config-airbnb",
     "./rules/base",
@@ -8,8 +8,7 @@ module.exports = {
     "./rules/lodash",
     "./rules/react",
     "./rules/react-hooks",
-    "eslint-config-prettier",
-    "eslint-config-prettier/react"
+    "eslint-config-prettier"
   ].map(require.resolve),
   plugins: [
     "eslint-plugin-import",
