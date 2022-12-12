@@ -5,7 +5,12 @@ module.exports = {
     "testing-library/await-async-utils": "warn",
     "testing-library/await-fire-event": "warn",
     "testing-library/consistent-data-testid": "off",
-    "testing-library/no-await-sync-events": "warn",
+    "testing-library/no-await-sync-events": [
+      "warn",
+      {
+        eventModules: ["fire-event"],
+      },
+    ],
     "testing-library/no-await-sync-query": "error",
     "testing-library/no-container": "warn",
     "testing-library/no-debugging-utils": "error",
@@ -27,6 +32,6 @@ module.exports = {
     "testing-library/prefer-screen-queries": "warn",
     "testing-library/prefer-user-event": "warn",
     "testing-library/prefer-wait-for": "warn",
-    "testing-library/render-result-naming-convention": "warn"
+    "testing-library/render-result-naming-convention": "warn",
   },
 };
